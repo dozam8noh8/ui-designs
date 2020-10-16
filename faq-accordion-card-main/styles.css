@@ -58,7 +58,7 @@ hr {
     align-items: center;
 }
 .background-panel {
-    background-color: hsl(273, 75%, 66%);
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(273, 78%, 59%));
     display: flex;
     height: 75%;
     width: 75%;
