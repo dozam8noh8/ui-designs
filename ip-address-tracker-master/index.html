@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+    <div class="page-container">
+      <div class="top-bar">
+        <h1> IP Address Tracker</h1>
+        <div class="search-bar">
+          <input id="ip-textbox" placeholder="Search for any IP address or domain"> </input>
+          <img onclick="doSearch()" src="images/icon-arrow.svg">
+        </div>
+        <div class="results">
+          <div class="right-border result-square">
+            <h6>IP</h6>
+            <h2 id="ip">null</h2>
+          </div>
+          <div class="right-border result-square">
+            <h6>
+              LOCATION
+            </h6>
+            <h2 id="location">null</h2>
+
+          </div>
+          <div class="right-border result-square">
+            <h6>
+              TIMEZONE
+            </h6>
+            <h2 id="timezone">null</h2>
+          </div>
+          <div class="result-square">
+              <h6> ISP
+              </h6>
+              <h2 id="isp">null</h2>
+
+          </div>
+        </div>
+      </div>
+      <div id="map"></div>
+
+
+      <!-- add offset value dynamically using the API -->
+    </div>
+    <script src="ip.js"></script>
+  </div>
+  <!-- IP Address
+  Location
+  Timezone
+  UTC
+  ISP -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
