@@ -1,3 +1,11 @@
+/*
+Owen Silver
+Oct 2020
+design from frontend mentors
+TODO
+- validate input with error messages
+- make it obvious you search for your own ip if you dont enter one or add a "find my ip button"
+*/
 let map = document.getElementById('map');
 var mymap = L.map('map').setView([51.505, -0.09], 13);
 var marker = L.marker([51.5, -0.09]).addTo(mymap);
